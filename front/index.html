@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="search-box"></div>
+    </header>
+
+    <main>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+    </main>
+
+    <script type="text/html" id="hit-template">
+        <div class="hit">
+        <p class="hit-name">
+            <h3>{{{_highlightResult.name.value}}} </h3>
+     
+        </p>
+        </div>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>

@@ -1,0 +1,19 @@
+{
+  "name": "algolia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "rebiss",
+  "license": "MIT",
+  "dependencies": {
+    "algoliasearch": "^4.8.5",
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "dev": "node ./",
+    "start": "nodemon ./"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
